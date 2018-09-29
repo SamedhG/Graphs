@@ -12,8 +12,6 @@ function start(){
 
   var graphics = new PIXI.Graphics();
 
-  graph.draw(graphics);
-
 
   app.stage.addChild(graphics);
 }

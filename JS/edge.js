@@ -1,13 +1,17 @@
 
 class Edge {
 
-  constructor(from, to) {
-    this.from = from;
+  constructor(to, weight) {
     this.to = to;
-    this.weight = 1;
+    this.weight = weight;
     this.bold = false;
   }
 
+  toggleBold() {
+    this.bold = !this.bold;
+  }
+}
+/*
   // Draws this edge as a directed edges
   // drawDirected(PIXI.Graphics)-> void
   function drawDirected(graphics) {
@@ -55,4 +59,4 @@ class Edge {
     graphics.moveTo(xFrom, yFrom);
     graphics.lineTo(xTo, yTo);
   }
-}
+*/
